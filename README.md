@@ -4,7 +4,7 @@ Eine einfache To-Do-App entwickelt mit dem Laravel-Framework.
 
 ## Voraussetzungen
 
-Stellen Sie sicher, dass Sie die folgenden Softwarekomponenten installiert haben:
+Softwarekomponenten installieren:
 
 - PHP >= 7.4
 - Composer
@@ -16,8 +16,8 @@ Stellen Sie sicher, dass Sie die folgenden Softwarekomponenten installiert haben
 1. **Repository klonen**
 
     ```bash
-    git clone https://github.com/dein-benutzername/dein-repo.git
-    cd dein-repo
+    git clone https://github.com/jakuzzibubbles/TodoAppLaravel.git
+    cd TodoAppLaravel
     ```
 
 2. **Abhängigkeiten installieren**
@@ -52,12 +52,12 @@ Stellen Sie sicher, dass Sie die folgenden Softwarekomponenten installiert haben
     DB_PORT=3306
     DB_DATABASE=todo_app
     DB_USERNAME=root
-    DB_PASSWORD=geheim
+    DB_PASSWORD=
     ```
 
 5. **Datenbank migrieren**
 
-    Führen Sie die Migrationen aus, um die Datenbanktabellen zu erstellen:
+    Migrationen ausführen, um die Datenbanktabellen zu erstellen:
 
     ```bash
     php artisan migrate
@@ -65,7 +65,7 @@ Stellen Sie sicher, dass Sie die folgenden Softwarekomponenten installiert haben
 
 6. **Anwendung starten**
 
-    Starten Sie den lokalen Entwicklungsserver:
+    Lokalen Entwicklungsserver starten:
 
     ```bash
     php artisan serve
