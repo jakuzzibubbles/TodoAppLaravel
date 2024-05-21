@@ -1,0 +1,19 @@
+{
+  "name": "todoapplaravel",
+  "version": "1.0.0",
+  "description": "first app",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakuzzibubbles/TodoAppLaravel.git"
+  },
+  "author": "Linh Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakuzzibubbles/TodoAppLaravel/issues"
+  },
+  "homepage": "https://github.com/jakuzzibubbles/TodoAppLaravel#readme"
+}
