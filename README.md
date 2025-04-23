@@ -1,8 +1,44 @@
+Projektüberblick
+- Erstellung einer funktionalen To-Do-Anwendung mit Laravel.
+- Implementierung von CRUD-Operationen für Aufgaben.
+- Verwendung von MySQL zur Speicherung und Abfrage von Daten.
+- Nutzung von Mockdaten zur Simulation realer Anwendungsfälle.
+
+Tech Stack
+- Backend: PHP 8.x mit Laravel Framework
+- Datenbank: MySQL
+- Entwicklungsumgebung: XAMPP
+- Versionskontrolle: Git
+
+Implementierungsdetails
+
+1. Datenbankstruktur: Die Datenbank besteht aus einer zentralen Tabelle `todos` mit den folgenden Feldern:
+
+- `id`: Primärschlüssel
+- `title`: Titel der Aufgabe
+- `description`: Beschreibung der Aufgabe
+- `status`: Status der Aufgabe (z. B. offen, erledigt)
+- `created_at` und `updated_at`: Zeitstempel
+
+2. Mockdaten: Zur Simulation realer Daten wurden Mockdaten in die Datenbank eingefügt. Dies ermöglichte das Testen verschiedener Abfragen und die Validierung der Anwendung.
+
+3. CRUD-Funktionalitäten: Die Anwendung unterstützt die grundlegenden CRUD-Operationen:
+- Create: Erstellung neuer Aufgaben
+- Read: Anzeige der Aufgabenliste
+- Update: Bearbeitung bestehender Aufgaben
+- Delete: Löschen von Aufgaben
+
+4. Datenbankabfragen: Ein besonderer Fokus lag auf der Erstellung effizienter Datenbankabfragen unter Verwendung von Laravel's Query Builder. Dies umfasste:
+- Filterung nach Status
+- Sortierung nach Erstellungsdatum
+- Suche nach Schlüsselwörtern im Titel oder in der Beschreibung
+
+Herausforderung: Effiziente Abfrage großer Datenmengen und Implementierung komplexer Filterlogiken.
+
+Lösung: Durch den Einsatz von Laravel's Query Builder konnten komplexe Abfragen effizient umgesetzt werden. Die Verwendung von Mockdaten half dabei, die Performance und Genauigkeit der Abfragen zu testen und zu optimieren.
+
+
 # To-Do App
-
-Eine einfache To-Do-App entwickelt mit dem Laravel-Framework.
-
-## Voraussetzungen
 
 Softwarekomponenten installieren:
 
@@ -13,14 +49,14 @@ Softwarekomponenten installieren:
 
 ## Installation
 
-1. **Repository klonen**
+ **Repository klonen**
 
     ```bash
     git clone https://github.com/jakuzzibubbles/TodoAppLaravel.git
     cd TodoAppLaravel
     ```
 
-2. **Abhängigkeiten installieren**
+ **Abhängigkeiten installieren**
 
     ```bash
     composer install
@@ -28,7 +64,7 @@ Softwarekomponenten installieren:
     npm run dev
     ```
 
-3. **Umgebungsdatei einrichten**
+ **Umgebungsdatei einrichten**
 
     Kopiere die `.env.example` Datei zu `.env`:
 
@@ -42,9 +78,9 @@ Softwarekomponenten installieren:
     php artisan key:generate
     ```
 
-4. **Datenbank konfigurieren**
+ **Datenbank konfigurieren**
 
-    Bearbeiten Sie die `.env` Datei und geben Sie Ihre Datenbankeinstellungen ein:
+    `.env` Datei:
 
     ```plaintext
     DB_CONNECTION=mysql
@@ -55,7 +91,7 @@ Softwarekomponenten installieren:
     DB_PASSWORD=
     ```
 
-5. **Datenbank migrieren**
+ **Datenbank migrieren**
 
     Migrationen ausführen, um die Datenbanktabellen zu erstellen:
 
@@ -63,7 +99,7 @@ Softwarekomponenten installieren:
     php artisan migrate
     ```
 
-6. **Anwendung starten**
+ **Anwendung starten**
 
     Lokalen Entwicklungsserver starten:
 
@@ -94,7 +130,7 @@ Softwarekomponenten installieren:
 
 ## Weitere Informationen
 
-Für weitere Informationen besuchen Sie die [Laravel Dokumentation](https://laravel.com/docs).
+[Laravel Dokumentation](https://laravel.com/docs)
 
 ## Lizenz
 
