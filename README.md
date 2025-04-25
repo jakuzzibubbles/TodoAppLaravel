@@ -4,12 +4,6 @@ Projektüberblick
 - Verwendung von MySQL zur Speicherung und Abfrage von Daten.
 - Nutzung von Mockdaten zur Simulation realer Anwendungsfälle.
 
-Tech Stack
-- Backend: PHP 8.x mit Laravel Framework
-- Datenbank: MySQL
-- Entwicklungsumgebung: XAMPP
-- Versionskontrolle: Git
-
 Implementierungsdetails
 
 1. Datenbankstruktur: Die Datenbank besteht aus einer zentralen Tabelle `todos` mit den folgenden Feldern:
